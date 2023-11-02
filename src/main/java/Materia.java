@@ -9,15 +9,9 @@ public class Materia {
         this.nombre = nombreMateria;
         this.correlativas = new ArrayList<>(correlativas);
     }
-
     public String getNombre() {
         return nombre;
     }
-
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
-
     public List<String> getCorrelativas() {
         if (correlativas == null) {
             correlativas = new ArrayList<>();
@@ -29,9 +23,5 @@ public class Materia {
             }
         }
         return filteredCorrelativas;
-    }
-
-    public void setCorrelativas(List<String> correlativas) {
-        this.correlativas = correlativas;
     }
 }
